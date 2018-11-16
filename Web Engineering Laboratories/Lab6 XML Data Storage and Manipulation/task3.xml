@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF‐8"?>
+<!DOCTYPE student
+[
+<!ELEMENT student (firstName,lastName,id,plan)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT plan (courses)>
+<!ELEMENT courses (course+)>
+<!ATTLIST courses year (CDATA) #REQUIRED>
+<!ELEMENT course (name,shortName,record?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT shortName (#PCDATA)>
+<!ELEMENT record (grade,date)>
+<!ELEMENT grade (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+]>
+
+ <student>
+  <firstName>Luca</firstName>
+  <lastName>Rossi</lastName>
+   <id>281283</id>
+   <plan>
+
+      <courses year="3">
+
+       <course>
+        <name> Programmazione Orientata agli Oggetti </name>
+        <shortName>POO</shortName>
+        <record>
+          <grade>30</grade>
+          <date>13/06/11</date>
+        </record>
+       </course>
+
+        <course>
+        <name>Analisi e progettazione del software</name>
+         <shortName>APS</shortName>
+        </course>
+
+      </courses>
+
+    </plan>
+ </student>

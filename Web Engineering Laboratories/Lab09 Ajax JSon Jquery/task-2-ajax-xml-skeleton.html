@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+
+<body>
+
+<button type="button" id='submitButton'>Get my CD collection</button>
+<br><br>
+<div id="error"></div>
+<table id="task1" border="1"><thead><tr>
+<th>Title</th>
+<th>Artist</th>
+<th>Country</th>
+<th>Company</th>
+<th>Price</th>
+<th>Year</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr></thead><table>
+<script src="jquery-3.2.1.js"></script>
+
+<script>
+$(document).ready(function(){
+	var data = "";
+	var check = 0;
+	alert('jQuery is working!')
+	$('#submitButton').on('click', function(){
+		if (check == 0 ){
+		$.ajax({url: "cd_catalog.xml",
+				type: 'GET',
+				success: function(result){
+				$("#task1 tr:last").remove();
+				//data = console.log(result);
+				console.log(result);
+        $(result).find("CD").each(function(){
+          var currency = $(this).find("PRICE").attr("currency");
+          if (currency == null){
+            currency = " ";
+          }
+          $("#task1 tr:last").after("<tr><td>"+$(this).find("TITLE").text()+"</td><td>"+$(this).find("ARTIST").text()+
+					"</td><td>"+$(this).find("COUNTRY").text()+"</td><td>"+$(this).find("COMPANY").text()+
+					"</td><td>"+currency+$(this).find("PRICE").text()+"</td><td>"+$(this).find("YEAR").text()+"</td></tr>");
+
+        }
+        );
+				for (var i=0;i<data.length;i++)
+				{
+
+				}
+				},
+				error: function(response, error){
+					console.log("Error" + response);
+					console.log(error);
+				},
+				dataType: "xml"
+				});
+				check = 1;
+			}
+			else {
+				alert("Data Already Added");
+			}
+	});
+});
+
+</script>
+
+
+</body>
+</html>

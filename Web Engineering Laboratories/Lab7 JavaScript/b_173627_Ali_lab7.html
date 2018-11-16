@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head><title></title>
+<style>
+.clear {
+  clear:both;
+}
+.calculator
+{
+  box-sizing: border-box;
+  width:20%;
+}
+.calculator .textbox input{
+  width:100%;
+  float:left;
+  box-sizing: border-box;
+  position: relative;
+  font-size:20px;
+}
+.calculator .button_{
+  float:left;
+  box-sizing: border-box;
+  content:
+  position: relative;
+  padding:5px;
+  width:20%;
+  font-size: 20px;
+  background-color: #CCCCCC;
+  border: 1px solid black;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<script type="text/javascript">
+var storedvalue = "";
+
+function append(val)
+{
+  var value = document.getElementById('textbox').value;
+  document.getElementById('textbox').value = value + "" + val;
+}
+
+function dot(){
+  var value =  document.getElementById('textbox').value;
+  document.getElementById('textbox').value = value + ".0";
+}
+
+function mC(){
+  storedvalue="";
+}
+
+function mS(){
+  storedvalue = eval(document.getElementById('textbox').value);
+}
+
+function mR(){
+  document.getElementById('textbox').value = storedvalue;
+}
+function square(){
+  var value = document.getElementById('textbox').value;
+  document.getElementById('textbox').value = Math.pow(eval(value),2);
+}
+function oneBy(){
+  var value = document.getElementById('textbox').value;
+  document.getElementById('textbox').value = 1 / eval(value);
+}
+
+function squareRoot(){
+  var value = document.getElementById('textbox').value;
+  document.getElementById('textbox').value = Math.sqrt(eval(value));
+}
+function equal()
+{
+  var value = document.getElementById('textbox').value;
+  document.getElementById('textbox').value = eval(value);
+}
+
+function mPlus(){
+  storedvalue += eval(document.getElementById('textbox').value);
+}
+
+function plusMinus(){
+  var value = document.getElementById('textbox').value;
+  document.getElementById('textbox').value = -1*eval(value);
+}
+
+function clear1(){
+  document.getElementById('textbox').value = "";
+}
+
+</script>
+<div class="calculator">
+<!-- 1 -->
+<div class="textbox"><input id="textbox" name="textbox" type="textbox"/></div>
+<span class="clear"></span>
+<!-- 2 -->
+<div class="button_"> <button onclick="mC()">MC</button> </div>
+<div class="button_"> <button onclick="append(0)">0</button> </div>
+<div class="button_"> <button onclick="append(1)">1</button> </div>
+<div class="button_"> <button onclick="append(2)">2</button> </div>
+<div class="button_"> <button onclick="append('+')">+</button> </div>
+<span class="clear"></span>
+<!-- 3 -->
+<div class="button_"> <button onclick="mS()">MS</button> </div>
+<div class="button_"> <button onclick="append(3)">3</button> </div>
+<div class="button_"> <button onclick="append(4)">4</button> </div>
+<div class="button_"> <button onclick="append(5)">5</button> </div>
+<div class="button_"> <button onclick="append('-')">-</button> </div>
+<span class="clear"></span>
+
+<div class="button_"> <button onclick="mR()">MR</button> </div>
+<div class="button_"> <button onclick="append(6)">6</button> </div>
+<div class="button_"> <button onclick="append(7)">7</button> </div>
+<div class="button_"> <button onclick="append(8)">8</button> </div>
+<div class="button_"> <button onclick="append('*')">x</button> </div>
+<span class="clear"></span>
+
+<div class="button_"> <button onclick="mPlus()">M+</button> </div>
+<div class="button_"> <button onclick="append(9)">9</button> </div>
+<div class="button_"> <button onclick="plusMinus()">&plusmn;</button> </div>
+<div class="button_"> <button onclick="equal()">=</button> </div>
+<div class="button_"> <button onclick="append('/')">/</button> </div>
+<span class="clear"></span>
+
+<div class="button_"> <button onclick="oneBy()">1/x</button> </div>
+<div class="button_"> <button onclick="dot()">.</button> </div>
+<div class="button_"> <button onclick="square()">x^2</button> </div>
+<div class="button_"> <button onclick="squareRoot()">&radic;</button> </div>
+<div class="button_"> <button onclick="clear1()">C</button> </div>
+<span class="clear"></span>
+<!-- End Calculator -->
+</div>
+
+</body>
+</html>

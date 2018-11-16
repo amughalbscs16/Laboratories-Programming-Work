@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE studentreport
+[
+<!ELEMENT studentreport (students,courses)>
+<!ELEMENT courses (course+)>
+<!ELEMENT students (student+)>
+<!ELEMENT course (name,department,allowedstudentstatus+)>
+<!ATTLIST course id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT allowedstudentstatus (#PCDATA)>
+<!ELEMENT student (sname,phone?,streetno
+,streetname,city,prov,studentcourse*,studentstatus,degree?)>
+<!ATTLIST student stid CDATA #REQUIRED>
+<!ELEMENT sname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT streetno (#PCDATA)>
+<!ELEMENT streetname (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT prov (#PCDATA)>
+<!ELEMENT studentcourse (#PCDATA)>
+<!ELEMENT studentstatus  (#PCDATA)>
+<!ELEMENT degree (#PCDATA)>
+]>

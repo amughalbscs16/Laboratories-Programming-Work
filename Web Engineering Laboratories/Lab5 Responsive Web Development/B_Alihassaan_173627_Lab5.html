@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>BCC website using DIVs</title>
+  <style>
+    * {
+    	box-sizing: border-box;
+    }
+    body{
+      background-color: black;
+      color:white;
+      border: 3px solid blue;
+      border-style: dashed;
+      margin: 3px;
+    }
+    a{
+      color:yellow;
+    }
+    a:hover{
+      color:orange;
+    }
+    img
+    {
+      border:1px;
+      border-radius: 5px;
+      width:100%;
+    }
+    @media only screen and (max-width: 400px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    .clear-m  {clear:both;}
+    }
+    @media only screen and (min-width: 401px) and (max-width: 800px) {
+    /* For tablet: */
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+    .clear-t  {clear:both;}
+    }
+    @media only screen and (min-width: 801px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .clear  {clear:both;}
+    }
+    .left {
+      float:left;
+    }
+    .right {
+      float:right;
+    }
+    .header
+    {
+      border: 1px solid #00BFFF;
+      position:fixed;
+      margin:1px;
+      padding:1px;
+      font-size: 16px;
+      font-variant: small-caps;
+      background: black;
+      width:95%;
+    }
+    .headertitle{
+      align-content: center;
+      align-items: center;
+      align-self: center;
+      align:center;
+    }
+    .headerbox
+    {
+      border: 1px dashed blue;
+      align-content: center;
+    }
+    .footer {
+      color: #00BFFF;
+    }
+    div {
+      padding:1%;
+    }
+    div1 {
+      margin-top:200px;
+      position:relative;
+      top:500px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+  <div class="header">
+    <div class="headertitle left col-4 col-t-12 col-m-12 clear-m"><center><h2><b>Ali Hassaan's Blog</b></h2></center></div>
+    <div class="headerbox col-2 col-t-6 col-m-12 right clear-m"><h3><a href="https://asknature.org/">Home</a></h3></div>
+    <div class="headerbox col-2 col-t-6 col-m-12 right clear-m"><h3><a href="https://asknature.org/">Nature</a></h3></div>
+    <div class="headerbox col-2 col-t-6 col-m-12 right clear-m"><h3><a href="https://asknature.org/">Scenery</a></h3></div>
+    <div class="headerbox col-2 col-t-6 col-m-12 right clear-m"><h3><a href="https://asknature.org/">Wallpaper</a></h3></div>
+    <div class="clear clear-m clear-t"></div>
+  </div>
+  <div class="div1">
+    <div class="left col-6 col-m-12 col-t-6">
+      <img src="http://pigios-svetaines.eu/projects/getsimple/data/uploads/images/Landscape-Nature-640x480.jpg"></br>
+      <div class="clear-m"></div>
+    </div>
+    <div class="right col-6 col-m-12 col-t-6">
+      <div class="left col-6 col-m-6 col-t-6">
+        <img src="https://cdn.allwallpaper.in/wallpapers/640x480/14751/beautiful-nature-scenery-640x480-wallpaper.jpg" alt="image"/></br>
+      </div>
+      <div class="right col-6 col-m-6 col-t-6">
+        <img src="https://hdwallpaperz.net/wp-content/uploads/2017/03/3D-Nature-Wallpaper-For-Mobile-Phone-7.jpg" alt="image"/></br>
+      </div>
+      <div class="clear clear-m clear-t"></div>
+    </div>
+
+    <div class="right col-6 col-m-12 col-t-6">
+      <div class="left col-6 col-m-6 col-t-6">
+        <img src="http://s1.1zoom.me/b4724/526/USA_Parks_Mountains_Lupinus_Mount_Rainier_National_542258_640x480.jpg" alt="image"/></br>
+      </div>
+      <div class="right col-6 col-m-6 col-t-6">
+        <img src="http://naturewallpaperfree.com/insects/nature-wallpaper-640x480-4194-4415be64.jpg" alt="image"/></br>
+      </div>
+      <div class="clear clear-m clear-t"></div>
+    </div>
+    <div class="clear clear-m clear-t"></div>
+    </div>
+    <div class="textdiv">
+      <h1>Nature Blog</h1>
+      <div class="left col-4 col-t-6 col-m-12">
+        <p><img src="https://free4kwallpaper.com/wp-content/uploads/2016/01/Top-2015-Nature-4K-Wallpaper-640x480.jpg">
+        <br/>A Beautiful, Nature Image</p>
+        <div class="clear-m"></div>
+      </div>
+      <div class="right col-8 col-t-6 col-m-12">
+        <p>Nature, in the broadest sense, is the natural, physical, or material world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general. The study of nature is a large, if not the only, part of science. Although humans are part of nature, human activity is often understood as a separate category from other natural phenomena.
+        </br></br>
+        The word nature is derived from the Latin word natura, or "essential qualities, innate disposition", and in ancient times, literally meant "birth". Natura is a Latin translation of the Greek word physis (φύσις), which originally related to the intrinsic characteristics that plants, animals, and other features of the world develop of their own accord. The concept of nature as a whole, the physical universe, is one of several expansions of the original notion; it began with certain core applications of the word φύσις by pre-Socratic philosophers, and has steadily gained currency ever since. This usage continued during the advent of modern scientific method in the last several centuries.
+        </br></br>
+        <div class="clear-m"></div>
+      </div>
+      <div class="clear clear-m clear-t"></div>
+    </div>
+    <div class="col-12 col-m-12 col-t-12">
+      <div class="left col-3 col-m-12 col-t-6">
+        <img src="http://naturewallpaperfree.com/flowers/nature-wallpaper-640x480-4200-412df26b.jpg" alt="image"/>
+        <div class="clear-m"></div>
+      </div>
+      <div class="left col-3 col-m-12 col-t-6">
+        <img src="https://www.hdwallback.net/wp-content/uploads/2017/11/4k-Nature-Wallpaper-dog-images-640x480.jpg" alt="image"/>
+        <div class="clear-m clear-t"></div>
+      </div>
+      <div class="left col-3 col-m-12 col-t-6">
+        <img src="http://www.webpublic.design/wp-content/download/Image_Overlay_From_The_Bottom/image.jpg" alt="image"/>
+        <div class="clear-m"></div>
+      </div>
+      <div class="left col-3 col-m-12 col-t-6">
+        <img src="http://www.pitclook.site/wp-content/uploads/2017/10/china-nature-new-china-nature-tours-china-landscape-scenery-sightseeing-of-china-nature-640x480.jpg" alt="image"/>
+        <div class="clear-m clear-t"></div>
+      </div>
+      <div class="clear clear-m clear-t"></div>
+    </div>
+    <div class="footer col-12 col-m-12 col-t-12">
+    <center>
+      <div class="col-4 col-m-12 col-t-8">
+        Copyright @ Ali Hassaan Mughal - NUST H12
+      </div>
+    </center>
+      <div class="clear clear-m clear-t"></div>
+    </div>
+  </div>
+</body>
+</html>

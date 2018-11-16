@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<studentreport>
+
+  <students>
+  <!-- Students Information -->
+  <student stid="995435245">
+    <sname>Ali</sname>
+    <phone>416-4245979</phone>
+    <streetno>406</streetno>
+    <streetname>Main</streetname>
+    <city>Toronto</city>
+    <prov>ON</prov>
+    <studentcourse>1</studentcourse>
+    <studentcourse>3</studentcourse>
+    <studentcourse>4</studentcourse>
+    <studentcourse>5</studentcourse>
+    <studentstatus>degree</studentstatus>
+    <degree>Bsc</degree>
+  </student>
+  <student stid="12312">
+    <sname>Bob</sname>
+    <phone>82323127</phone>
+    <streetno>12</streetno>
+    <streetname>Charles</streetname>
+    <city>Ottawa</city>
+    <prov>ON</prov>
+    <studentcourse>3</studentcourse>
+    <studentcourse>4</studentcourse>
+    <studentcourse>5</studentcourse>
+    <studentstatus>special</studentstatus>
+  </student>
+  <student stid="34">
+    <sname>Carlos</sname>
+    <phone>426-4245979</phone>
+    <streetno>101</streetno>
+    <streetname>King</streetname>
+    <city>Oshawa</city>
+    <prov>ON</prov>
+    <studentstatus>special</studentstatus>
+  </student>
+  <student stid="35">
+    <sname>Fernando</sname>
+    <streetno>35</streetno>
+    <streetname>Avenue</streetname>
+    <city>Montreal</city>
+    <prov>QC</prov>
+    <studentcourse>2</studentcourse>
+    <studentcourse>4</studentcourse>
+    <studentcourse>8</studentcourse>
+    <studentcourse>10</studentcourse>
+    <studentstatus>degree</studentstatus>
+    <degree>BEng</degree>
+  </student>
+  <student stid="36">
+    <sname>Jason</sname>
+    <phone>4136-4245979</phone>
+    <streetno>36</streetno>
+    <streetname>Pembina</streetname>
+    <city>Winnipeg</city>
+    <prov>MB</prov>
+    <studentcourse>1</studentcourse>
+    <studentcourse>2</studentcourse>
+    <studentcourse>3</studentcourse>
+    <studentstatus>degree</studentstatus>
+    <degree>BA</degree>
+  </student>
+  <student stid="37">
+    <sname>Jun</sname>
+    <phone>4137-4245979</phone>
+    <streetno>37</streetno>
+    <streetname>Charles</streetname>
+    <city>Toronto</city>
+    <prov>ON</prov>
+    <studentcourse>5</studentcourse>
+    <studentcourse>7</studentcourse>
+    <studentcourse>10</studentcourse>
+    <studentstatus>degree</studentstatus>
+    <degree>BEng</degree>
+  </student>
+  <student stid="38">
+    <sname>Lee</sname>
+    <phone>41638-4245979</phone>
+    <streetno>30386</streetno>
+    <streetname>Charles</streetname>
+    <city>Toronto</city>
+    <prov>ON</prov>
+    <studentcourse>3</studentcourse>
+    <studentcourse>4</studentcourse>
+    <studentcourse>7</studentcourse>
+    <studentcourse>9</studentcourse>
+    <studentstatus>degree</studentstatus>
+    <degree>Bsc</degree>
+  </student>
+  <student stid="39">
+    <sname>Lueng</sname>
+    <streetno>39</streetno>
+    <streetname>Yong</streetname>
+    <city>Toronto</city>
+    <prov>ON</prov>
+    <studentstatus>degree</studentstatus>
+    <degree>Bsc</degree>
+  </student>
+  <student stid="40">
+    <sname>Mark</sname>
+    <phone>4140-4245979</phone>
+    <streetno>40</streetno>
+    <streetname>University</streetname>
+    <city>Ottawa</city>
+    <prov>ON</prov>
+    <studentcourse>1</studentcourse>
+    <studentcourse>5</studentcourse>
+    <studentcourse>6</studentcourse>
+    <studentcourse>7</studentcourse>
+    <studentstatus>special</studentstatus>
+  </student>
+  <student stid="41">
+    <sname>Maria</sname>
+    <phone>41641-4245979</phone>
+    <streetno>41</streetno>
+    <streetname>Queen</streetname>
+    <city>Ottawa</city>
+    <prov>ON</prov>
+    <studentcourse>5</studentcourse>
+    <studentstatus>special</studentstatus>
+  </student>
+  <student stid="42">
+    <sname>Nicholas</sname>
+    <phone>41642-4245979</phone>
+    <streetno>42</streetno>
+    <streetname>CumberLand</streetname>
+    <city>Ottawa</city>
+    <prov>ON</prov>
+    <studentcourse>9</studentcourse>
+    <studentcourse>10</studentcourse>
+    <studentstatus>special</studentstatus>
+  </student>
+
+    <!--End Student Information-->
+    </students>
+    <!-- Courses Information -->
+    <courses>
+    <course id="1">
+      <name>Introduction to Databases</name>
+      <department>CS</department>
+      <allowedstudentstatus>both</allowedstudentstatus>
+    </course>
+    <course id="2">
+      <name>Numerical Methods</name>
+      <department>CS</department>
+      <allowedstudentstatus>both</allowedstudentstatus>
+    </course>
+    <course id="3">
+      <name>Operating Systems</name>
+      <department>CS</department>
+      <allowedstudentstatus>degree</allowedstudentstatus>
+    </course>
+    <course id="4">
+      <name>Computer Graphics</name>
+      <department>CS</department>
+      <allowedstudentstatus>degree</allowedstudentstatus>
+    </course>
+    <course id="5">
+      <name>Calculus Sci 1</name>
+      <department>MAT</department>
+      <allowedstudentstatus>special</allowedstudentstatus>
+    </course>
+    <course id="6">
+      <name>Complex Variables</name>
+      <department>MAT</department>
+      <allowedstudentstatus>both</allowedstudentstatus>
+    </course>
+    <course id="7">
+      <name>Groups and Symmetry</name>
+      <department>MAT</department>
+      <allowedstudentstatus>degree</allowedstudentstatus>
+    </course>
+    <course id="8">
+      <name>Introduction to Economics</name>
+      <department>Economics</department>
+      <allowedstudentstatus>both</allowedstudentstatus>
+    </course>
+    <course id="9">
+      <name>Microeconomic Theory</name>
+      <department>Economics</department>
+      <allowedstudentstatus>degree</allowedstudentstatus>
+    </course>
+    <course id="10">
+      <name>Energy and Resources</name>
+      <department>Economics</department>
+      <allowedstudentstatus>special</allowedstudentstatus>
+    </course>
+    </courses>
+    <!--End Courses Information-->
+</studentreport>

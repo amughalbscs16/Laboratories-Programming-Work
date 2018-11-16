@@ -1,0 +1,164 @@
+
+
+<!DOCTYPE html>
+<html>
+<head><title>Responsive Web Design (RWD):: Example</title>
+<!-- ****** step 1: -->
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ******* step 2: box sizing */
+* {
+	box-sizing: border-box;
+}
+
+/* ******* step 3: box sizing */
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66%;}
+	.col-m-3 {width: 25%;}
+	.col-m-4 {width: 33.33%;}
+	.col-m-5 {width: 41.66%;}
+	.col-m-6 {width: 50%;}
+	.col-m-7 {width: 58.33%;}
+	.col-m-8 {width: 66.66%;}
+	.col-m-9 {width: 75%;}
+	.col-m-10 {width: 83.33%;}
+	.col-m-11 {width: 91.66%;}
+	.col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+
+/* ******* step 4: clear both */
+[class*="col-"] {
+	float: left;
+	padding: 5px;
+}
+
+/* ******* step 5: clear both */
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+html {
+	font-family: "Lucida Sans", sans-serif;
+}
+.header {
+	background-color: #9933cc;
+	color: #ffffff;
+	padding: 5px;
+}
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+	padding: 8px;
+	margin-bottom: 7px;
+	background-color :#33b5e5;
+	color: #ffffff;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+	background-color: #0099cc;
+}
+.aside {
+	background-color: #33b5e5;
+	padding: 15px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	box-shadow: 0 15px 15px rgba(0,0,0,0.12), 0 15px 15px rgba(0,0,0,0.24);
+}
+.footer {
+	background-color: #0099cc;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+	padding: 15px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- ******* step 6: create rows -->
+
+<div class="header">
+	<h1>Derawar Fort, Bahawalpur</h1>
+</div>
+
+<div class="row">
+
+	<div class="col-12 col-m-12">
+	<img src="Derawar-Fort-Bahawalpur.jpg"
+	   width="100%" />
+	</div>
+
+</div>
+
+<div class="row">
+	<div class="col-3 col-m-3 menu">
+		<ul>
+			<li>The Fort</li>
+			<li>The City</li>
+			<li>The History</li>
+			<li>The Culture</li>
+		</ul>
+	</div>
+
+	<div class="col-6 col-m-9">
+		<h1>The Fort</h1>
+		
+		<p>Derawar Fort (Urdu: قِلعہ دراوڑ ‬‎), is a large square fortress in Ahmadpur East Tehsil, Punjab, Pakistan. Approximately 100 km south of the city of Bahawalpur, the forty bastions of Derawar are visible for many miles in the Cholistan Desert. The walls have a perimeter of 1500 metres and stand up to thirty metres high.
+
+		Derawar fort was built by Rai Jajja Bhatti, a Rajput ruler of the Bhatti clan.[1] The fort was built in the 9th century AD as a tribute to Rawal Deoraj Bhatti, a Rajput sovereign king of the Jaisalmer and Bahawalpur areas who had his capital at Lodhruva.[2] The fort was initially known as Dera Rawal, and later referred to as Dera Rawar, which with the passage of time came to be pronounced Derawar, its present name.[2]
+
+		In the 18th century, the fort was taken over by Muslim Nawabs of Bahawalpur from the Shahotra tribe. It was later renovated by Abbasi rulers, but in 1747 the fort slipped from their hands owing to Bahawal Khan's preoccupations at Shikarpur. Nawab Mubarak Khan took the stronghold back in 1804. 1,000 year-old catapult shells were found in the debris near a decaying wall in the fort.[3]
+
+		This historically significant fort presents an enormous and impressive structure in the heart of the Cholistan desert, but it is rapidly deteriorating and in need of immediate preventative measures for preservation.</p>
+	</div>
+
+	<div class="col-3 col-m-12">
+		<div class="aside">
+			<h2>What?</h2>
+			<p>Derawar Fort (Urdu: قِلعہ دراوڑ ‬‎), is a large square fortress in Ahmadpur East Tehsil, Punjab, Pakistan.</p>
+			
+			<h2>Where?</h2>
+			<p>Approximately 100 km south of the city of Bahawalpur, the forty bastions of Derawar are visible for many miles in the Cholistan Desert.</p>
+			
+			<h2>Tourism</h2>
+			<p>Derawar Fort is an important place for tourists. The off-road Cholistan Desert Jeep Rally or TDCP Cholistan Jeep Rally was recently established near the Derawar Fort in Ahmadpur East Tehsil.</p>
+		</div>
+	</div>
+
+</div>
+
+<div class="footer">
+	<p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AJAX JSON</title>
+
+<script src="jquery-3.2.1.js"></script>
+
+</head>
+
+<body>
+<button type="button" id='submitButton'>Fetch Data</button>
+<br><br>
+<table id="task1" border="1"><thead><tr>
+<th>Name</th>
+<th>Designation</th>
+<th>Salary</th>
+<th>Joining date</th>
+<th>Office</th>
+<th>Extension</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr></thead><table>
+<script>
+$(document).ready(function(){
+	var data = "";
+	var check = 0;
+	alert('jQuery is working!')
+	$('#submitButton').on('click', function(){
+		if (check == 0 ){
+		$.ajax({url: "emp_data.json",
+				type: 'GET',
+				success: function(result){
+				$("#task1 tr:last").remove();
+				//data = console.log(result);
+				data = result.empolyees;
+				for (var i=0;i<data.length;i++)
+				{
+					$("#task1 tr:last").after("<tr><td>"+data[i].name+"</td><td>"+data[i].designation+
+					"</td><td>"+data[i].salary+"</td><td>"+data[i].joining_date+
+					"</td><td>"+data[i].office+"</td><td>"+data[i].extension+"</td></tr>");
+				}
+				},
+				error: function(response, error){
+					console.log("Error" + response);
+					console.log(error);
+				},
+				dataType: "json"
+				});
+				check = 1;
+			}
+			else {
+				alert("Data Already Added");
+			}
+	});
+});
+
+</script>
+
+</body>
+</html>

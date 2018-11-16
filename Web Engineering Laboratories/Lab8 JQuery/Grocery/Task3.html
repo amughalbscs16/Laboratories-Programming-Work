@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 7: Introducing jQuery - Event Object</title>
+    <link rel="stylesheet" href="css/c07.css" />
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">List</h1>
+      <h2>Buy groceries</h2>
+      <ul>
+        <li id="one" class="hot"><em>fresh</em> figs </li>
+        <li id="two" class="hot">pine nuts</li>
+        <li id="three" class="hot">honey</li>
+        <li id="four">balsamic vinegar</li>
+        <li id="four">linguine</li>
+        <li id="four">cream</li>
+        <li id="four">coconut milk</li>
+        <li id="four">mushrooms</li>
+        <li id="four">apples</li>
+        <li id="four">strawberries</li>
+        <li id="four">rice crackers</li>
+        <li id="four">brie</li>
+        <li id="four">rice</li>
+        <li id="four">green tea</li>
+        <li id="four">coconut vine-ripened tomatoes</li>
+        <li id="four">bananas</li>
+        <li id="four">red kidney beans</li>
+        <li id="four">baricot beans</li>
+        <li id="four">lettuce</li>
+        <li id="four">organic brown rice vinegar</li>
+        <li id="four">sushi nori</li>
+        <li id="four">garlic</li>
+        <li id="four">red onions</li>
+        <li id="four">goat's cheese</li>
+        <li id="four">baby leaf spinach</li>
+        <li id="four">coconut</li>
+        <li id="four">avocado</li>
+        <li id="four">leeks</li>
+        <li id="four">carrots</li>
+        <li id="four">pears</li>
+        <li id="four">apples</li>
+        <li id="four">organic free-range eggs</li>
+        <li id="four">cashew not buffer</li>
+        <li id="four">lemons</li>
+        <li id="four">coconut oil</li>
+        <li id="four">sourdough bread</li>
+        <li id="four">almond milk</li>
+        <li id="four">kale</li>
+        <li id="four">gluten-free soy sauce</li>
+        <li id="four">quinoa</li>
+      </ul>
+      <br/>
+      <div id="footer"> ListKing  </div>
+      <br/>
+    </div>
+    <div style="position: fixed; right:1px; bottom:1px;" id="slideAd"> Buy ListKing Pro<br/> for Only $1.99 </div>
+
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <script>
+
+    $(function(){
+      var range = $('#footer').offset().top - $(window).height() - 500;
+      var vertical = $(window).scrollTop();
+      if (range - vertical <= 500){
+      $('#slideAd').show();
+      }
+      else
+      {
+        $('#slideAd').hide();
+      }
+      $(window).scroll(function(){
+        range = $('#footer').offset().top - $(window).height() - 500;
+        vertical = $(window).scrollTop();
+        if (range - vertical <= 500){
+        $('#slideAd').fadeIn(500);
+        }
+        else
+        {
+          $('#slideAd').fadeOut(500);
+        }
+      });
+    });
+
+    </script>
+  </body>
+</html>

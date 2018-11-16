@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF‐8"?>
+<!DOCTYPE email
+[
+<!ELEMENT email (from,to,content)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT content (#PCDATA|person|course|exercises)*>
+<!ELEMENT person (#PCDATA)>
+<!ELEMENT course (#PCDATA)>
+<!ELEMENT exercises (exercise+)>
+<!ELEMENT exercise (topic,description)>
+<!ELEMENT topic (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+]>
+
+<email>
+   <from> luca.rossi.917@gmail.com </from>
+   <to> atzeni@dia.uniroma3.it </to>
+   <content> Dear
+     <person> Paolo </person>,
+     here are some very hard exercises for the upcoming assignment of
+     <course> web engineering </course>:
+     <exercises>
+        <exercise>
+          <topic> DTD </topic>
+          <description> From Instance to DTD </description>
+        </exercise>
+        <exercise>
+          <topic> XPath </topic>
+          <description> Find students with average grade better than 26 </description>
+        </exercise>
+    </exercises> Best Regards,
+    <person> Luca </person>
+  </content>
+</email>
