@@ -1,0 +1,4 @@
+DELIMITER $$
+CREATE FUNCTION `calTax`(`amount` INT) RETURNS int(11)
+	RETURN amount*0.10$$
+DELIMITER ;
